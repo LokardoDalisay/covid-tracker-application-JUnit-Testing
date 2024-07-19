@@ -4,12 +4,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class CovidTrackerApplication
 {
 	public  static  final Logger logger = LoggerFactory.getLogger(CovidTrackerApplication.class);
 
+	
 	public static void main(String[] args)
 	{
 		logger.info("Continous Integration Job");
@@ -19,6 +21,13 @@ public class CovidTrackerApplication
 	public void run(String[] args) throws Exception
 	{
 		logger.info("Second Logger");
+	}
+
+	//For apache testing
+	@GetMapping("/get")
+	public String getData()
+	{
+		return "Testing, testing";
 	}
 
 }
