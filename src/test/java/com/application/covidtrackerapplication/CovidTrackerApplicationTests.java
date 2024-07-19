@@ -1,13 +1,22 @@
 package com.application.covidtrackerapplication;
 
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
-class CovidTrackerApplicationTests {
+class CovidTrackerApplicationTests
+{
+	public  static  final Logger logger = LoggerFactory.getLogger(CovidTrackerApplication.class);
 
 	@Test
-	void contextLoads() {
+	void contextLoads()
+	{
+		logger.info("Test Class");
+		assertEquals(true, true);
 	}
 
 }
