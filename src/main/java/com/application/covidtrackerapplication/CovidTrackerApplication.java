@@ -24,7 +24,7 @@ public class CovidTrackerApplication
 	}
 
 	//For apache testing
-	//Ambatutest
+	//Ambatutest again
 	@GetMapping("/get")
 	public String getData()
 	{
