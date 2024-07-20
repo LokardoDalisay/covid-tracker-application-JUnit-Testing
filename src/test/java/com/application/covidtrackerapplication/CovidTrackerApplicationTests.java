@@ -1,11 +1,10 @@
 package com.application.covidtrackerapplication;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class CovidTrackerApplicationTests
@@ -29,3 +28,5 @@ class CovidTrackerApplicationTests
 //Please work na
 
 //Working na boss
+
+//comments again
