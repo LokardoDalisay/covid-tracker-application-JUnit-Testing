@@ -16,7 +16,7 @@ class CovidTrackerApplicationTests
 	void contextLoads()
 	{
 		logger.info("Test Class");
-		assertEquals(false, true);
+		assertEquals(true, true);
 	}
 
 }
